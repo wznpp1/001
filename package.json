@@ -1,0 +1,18 @@
+{
+  "main": "dist/app.js",
+  "private": true,
+  "scripts": {
+    "test": "npm run build && npm run lint",
+    "lint": "tslint --project .",
+    "build": "tsc -p .",
+    "watch": "tsc -p . -w --preserveWatchOutput",
+    "start": "tabris serve -l -a -w"
+  },
+  "dependencies": {
+    "tabris": "^3.0.0-beta2"
+  },
+  "devDependencies": {
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.4"
+  }
+}
